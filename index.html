@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./asset/styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+  <script src="./asset/script.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="">Option 1</a></li>
+        <li><a href="">Option 2</a></li>
+        <li><a href="">Option 3</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="head-holder"></div>
+  <div id="content-container">
+    <div class="content-inner">
+      <div class="description-container">
+        <h3>Наш продукт</h3>
+        <p class="main-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend turpis non quam porta, in commodo ligula iaculis. Pellentesque convallis sem in ipsum viverra placerat. Etiam pretium nisi tortor. Donec nulla massa, tempus at vestibulum sit amet, tincidunt et libero. Maecenas sed ultricies elit, quis efficitur magna. Fusce congue gravida interdum. In faucibus justo eget posuere congue. Morbi mattis ex eget dui pretium vehicula. Phasellus dapibus aliquam mi, non varius dui scelerisque.
+        </p>
+
+        <p class="main-description">Vestibulum a dictum sem, eget malesuada lectus. Ut hendrerit in erat ut laoreet. Donec posuere risus sed nunc pulvinar, in varius massa luctus. Nunc suscipit mattis est ac cursus.
+        Pellentesque mauris turpis, blandit sit amet ullamcorper quis, posuere eget sapien. Nunc vitae faucibus purus. Suspendisse at est vehicula, mattis lacus eget, ullamcorper dolor. Aenean a turpis non enim faucibus porttitor. Sed rhoncus nunc tortor, quis tempor lorem maximus placerat. Cras at tortor quis tellus euismod commodo eget nec sapien. Cras imperdiet id neque non fringilla. Maecenas vulputate, dolor eu finibus sodales, purus nisi maximus mi, at cursus quam sem et mi. Nulla sit amet tempus ligula. Vestibulum sit amet rutrum mauris. Proin convallis viverra nibh, in egestas sapien congue vitae. Phasellus metus tellus, interdum sit amet finibus eu, ornare a nisi. </p>
+      </div>
+      <div class="description-container">
+        <h3>Наши преимущества</h3>
+        <div class="pros-container">
+          <div class="pros-item">
+            <div class="pros-img"><img src="asset/cat2.jpg" alt="cat2"></div>
+            <div class="pros-text"><p>Vestibulum a dictum sempurus nisi maximus mi, at cursus quam</p></div>
+          </div>
+          <div class="pros-item">
+            <div class="pros-img"><img src="asset/cat2.jpg" alt="cat2"></div>
+            <div class="pros-text"><p>Proin convallis viverra nibh amet ullamcorper quis, posuere eget sapien</p></div>
+          </div>
+          <div class="pros-item">
+            <div class="pros-img"><img src="asset/cat2.jpg" alt="cat2"></div>
+            <div class="pros-text"><p>Nunc vitae faucibus purus at est vehicula, mattis lacus eget, ullamcorper dolor</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="description-container">
+        <h3>Оставьте сообщение менеджеру</h3>
+        <div id="input_form_container">
+          <form id="message_form">
+            <div class="input-field">
+              <i class="material-icons prefix">person</i>
+              <input type="text" id="name_input" name="name" >
+              <label for="name_input">Ваше ФИО</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="text" id="email_input" name="email">
+              <label for="email_input">E-mail</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">local_phone</i>
+              <input type="text" id="phone_input" name="phone">
+              <label for="phone_input">Телефон для связи</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">mail</i>
+              <textarea id="message_text" class="materialize-textarea" name="message"></textarea>
+              <label for="message_text">Ваше сообщение</label>
+            </div>
+            <p class="error" id="errorLabel"></p>
+            <button type="button" class="btn btn-large" id="submit_request">Send <i class="material-icons right">send</i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
